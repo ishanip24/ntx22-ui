@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Thu Jan 13 14:12:35 2022
+    on Wed Jan 19 20:09:28 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/ishani/Desktop/school/neurotech/ui/title_lastrun.py',
+    originPath='/Users/ishani/Desktop/school/neurotech/fr/a_g_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -90,7 +90,7 @@ left_top = visual.ShapeStim(
     size=(0.15, 0.15), vertices='circle',
     ori=0.0, pos=(-0.6, 0.3),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='blue',
-    opacity=None, depth=0.0, interpolate=True)
+    opacity=1.0, depth=0.0, interpolate=True)
 middle_top = visual.ShapeStim(
     win=win, name='middle_top',
     size=(0.15, 0.15), vertices='circle',
@@ -121,41 +121,48 @@ right_bottom = visual.ShapeStim(
     ori=0.0, pos=(0.6, -0.3),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='red',
     opacity=None, depth=-5.0, interpolate=True)
-a_f = visual.TextStim(win=win, name='a_f',
-    text='ABC\nDEF',
+a = visual.TextStim(win=win, name='a',
+    text='A',
     font='Open Sans',
     pos=(-0.6, 0.15), height=0.05, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-6.0);
-g_l = visual.TextStim(win=win, name='g_l',
-    text='GHI\nJKL',
+c = visual.TextStim(win=win, name='c',
+    text='C',
     font='Open Sans',
     pos=(0.6, 0.15), height=0.05, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-7.0);
-m_q = visual.TextStim(win=win, name='m_q',
-    text='MNO\nPRQ',
+d = visual.TextStim(win=win, name='d',
+    text='D',
     font='Open Sans',
     pos=(-0.6, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-8.0);
-r_w = visual.TextStim(win=win, name='r_w',
-    text='RST\nUVW',
-    font='Open Sans',
-    pos=(0.6, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
-    color='black', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-9.0);
-x_z = visual.TextStim(win=win, name='x_z',
-    text='XYZ',
+e = visual.TextStim(win=win, name='e',
+    text='E\n',
     font='Open Sans',
     pos=(0, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
+    depth=-9.0);
+f = visual.TextStim(win=win, name='f',
+    text='F',
+    font='Open Sans',
+    pos=(0.6, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
     depth=-10.0);
+b = visual.TextStim(win=win, name='b',
+    text='B',
+    font='Open Sans',
+    pos=(0, 0.15), height=0.05, wrapWidth=None, ori=0.0, 
+    color='black', colorSpace='rgb', opacity=None, 
+    languageStyle='LTR',
+    depth=-11.0);
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -166,7 +173,7 @@ continueRoutine = True
 routineTimer.add(20.000000)
 # update component parameters for each repeat
 # keep track of which components have finished
-trialComponents = [left_top, middle_top, right_top, left_bottom, middle_bottom, right_bottom, a_f, g_l, m_q, r_w, x_z]
+trialComponents = [left_top, middle_top, right_top, left_bottom, middle_bottom, right_bottom, a, c, d, e, f, b]
 for thisComponent in trialComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -205,6 +212,8 @@ while continueRoutine and routineTimer.getTime() > 0:
             left_top.frameNStop = frameN  # exact frame index
             win.timeOnFlip(left_top, 'tStopRefresh')  # time at next scr refresh
             left_top.setAutoDraw(False)
+    if left_top.status == STARTED:  # only update if drawing
+        left_top.setOpacity(sin(10*t), log=False)
     
     # *middle_top* updates
     if middle_top.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -291,90 +300,107 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(right_bottom, 'tStopRefresh')  # time at next scr refresh
             right_bottom.setAutoDraw(False)
     
-    # *a_f* updates
-    if a_f.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *a* updates
+    if a.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        a_f.frameNStart = frameN  # exact frame index
-        a_f.tStart = t  # local t and not account for scr refresh
-        a_f.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(a_f, 'tStartRefresh')  # time at next scr refresh
-        a_f.setAutoDraw(True)
-    if a_f.status == STARTED:
+        a.frameNStart = frameN  # exact frame index
+        a.tStart = t  # local t and not account for scr refresh
+        a.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(a, 'tStartRefresh')  # time at next scr refresh
+        a.setAutoDraw(True)
+    if a.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > a_f.tStartRefresh + 20.0-frameTolerance:
+        if tThisFlipGlobal > a.tStartRefresh + 20.0-frameTolerance:
             # keep track of stop time/frame for later
-            a_f.tStop = t  # not accounting for scr refresh
-            a_f.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(a_f, 'tStopRefresh')  # time at next scr refresh
-            a_f.setAutoDraw(False)
+            a.tStop = t  # not accounting for scr refresh
+            a.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(a, 'tStopRefresh')  # time at next scr refresh
+            a.setAutoDraw(False)
     
-    # *g_l* updates
-    if g_l.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *c* updates
+    if c.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        g_l.frameNStart = frameN  # exact frame index
-        g_l.tStart = t  # local t and not account for scr refresh
-        g_l.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(g_l, 'tStartRefresh')  # time at next scr refresh
-        g_l.setAutoDraw(True)
-    if g_l.status == STARTED:
+        c.frameNStart = frameN  # exact frame index
+        c.tStart = t  # local t and not account for scr refresh
+        c.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(c, 'tStartRefresh')  # time at next scr refresh
+        c.setAutoDraw(True)
+    if c.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > g_l.tStartRefresh + 20.0-frameTolerance:
+        if tThisFlipGlobal > c.tStartRefresh + 20.0-frameTolerance:
             # keep track of stop time/frame for later
-            g_l.tStop = t  # not accounting for scr refresh
-            g_l.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(g_l, 'tStopRefresh')  # time at next scr refresh
-            g_l.setAutoDraw(False)
+            c.tStop = t  # not accounting for scr refresh
+            c.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(c, 'tStopRefresh')  # time at next scr refresh
+            c.setAutoDraw(False)
     
-    # *m_q* updates
-    if m_q.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *d* updates
+    if d.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        m_q.frameNStart = frameN  # exact frame index
-        m_q.tStart = t  # local t and not account for scr refresh
-        m_q.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(m_q, 'tStartRefresh')  # time at next scr refresh
-        m_q.setAutoDraw(True)
-    if m_q.status == STARTED:
+        d.frameNStart = frameN  # exact frame index
+        d.tStart = t  # local t and not account for scr refresh
+        d.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(d, 'tStartRefresh')  # time at next scr refresh
+        d.setAutoDraw(True)
+    if d.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > m_q.tStartRefresh + 20.0-frameTolerance:
+        if tThisFlipGlobal > d.tStartRefresh + 20.0-frameTolerance:
             # keep track of stop time/frame for later
-            m_q.tStop = t  # not accounting for scr refresh
-            m_q.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(m_q, 'tStopRefresh')  # time at next scr refresh
-            m_q.setAutoDraw(False)
+            d.tStop = t  # not accounting for scr refresh
+            d.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(d, 'tStopRefresh')  # time at next scr refresh
+            d.setAutoDraw(False)
     
-    # *r_w* updates
-    if r_w.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *e* updates
+    if e.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        r_w.frameNStart = frameN  # exact frame index
-        r_w.tStart = t  # local t and not account for scr refresh
-        r_w.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(r_w, 'tStartRefresh')  # time at next scr refresh
-        r_w.setAutoDraw(True)
-    if r_w.status == STARTED:
+        e.frameNStart = frameN  # exact frame index
+        e.tStart = t  # local t and not account for scr refresh
+        e.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(e, 'tStartRefresh')  # time at next scr refresh
+        e.setAutoDraw(True)
+    if e.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > r_w.tStartRefresh + 20.0-frameTolerance:
+        if tThisFlipGlobal > e.tStartRefresh + 20.0-frameTolerance:
             # keep track of stop time/frame for later
-            r_w.tStop = t  # not accounting for scr refresh
-            r_w.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(r_w, 'tStopRefresh')  # time at next scr refresh
-            r_w.setAutoDraw(False)
+            e.tStop = t  # not accounting for scr refresh
+            e.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(e, 'tStopRefresh')  # time at next scr refresh
+            e.setAutoDraw(False)
     
-    # *x_z* updates
-    if x_z.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    # *f* updates
+    if f.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
         # keep track of start time/frame for later
-        x_z.frameNStart = frameN  # exact frame index
-        x_z.tStart = t  # local t and not account for scr refresh
-        x_z.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(x_z, 'tStartRefresh')  # time at next scr refresh
-        x_z.setAutoDraw(True)
-    if x_z.status == STARTED:
+        f.frameNStart = frameN  # exact frame index
+        f.tStart = t  # local t and not account for scr refresh
+        f.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(f, 'tStartRefresh')  # time at next scr refresh
+        f.setAutoDraw(True)
+    if f.status == STARTED:
         # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > x_z.tStartRefresh + 20.0-frameTolerance:
+        if tThisFlipGlobal > f.tStartRefresh + 20.0-frameTolerance:
             # keep track of stop time/frame for later
-            x_z.tStop = t  # not accounting for scr refresh
-            x_z.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(x_z, 'tStopRefresh')  # time at next scr refresh
-            x_z.setAutoDraw(False)
+            f.tStop = t  # not accounting for scr refresh
+            f.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(f, 'tStopRefresh')  # time at next scr refresh
+            f.setAutoDraw(False)
+    
+    # *b* updates
+    if b.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        b.frameNStart = frameN  # exact frame index
+        b.tStart = t  # local t and not account for scr refresh
+        b.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(b, 'tStartRefresh')  # time at next scr refresh
+        b.setAutoDraw(True)
+    if b.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > b.tStartRefresh + 20.0-frameTolerance:
+            # keep track of stop time/frame for later
+            b.tStop = t  # not accounting for scr refresh
+            b.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(b, 'tStopRefresh')  # time at next scr refresh
+            b.setAutoDraw(False)
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -409,16 +435,18 @@ thisExp.addData('middle_bottom.started', middle_bottom.tStartRefresh)
 thisExp.addData('middle_bottom.stopped', middle_bottom.tStopRefresh)
 thisExp.addData('right_bottom.started', right_bottom.tStartRefresh)
 thisExp.addData('right_bottom.stopped', right_bottom.tStopRefresh)
-thisExp.addData('a_f.started', a_f.tStartRefresh)
-thisExp.addData('a_f.stopped', a_f.tStopRefresh)
-thisExp.addData('g_l.started', g_l.tStartRefresh)
-thisExp.addData('g_l.stopped', g_l.tStopRefresh)
-thisExp.addData('m_q.started', m_q.tStartRefresh)
-thisExp.addData('m_q.stopped', m_q.tStopRefresh)
-thisExp.addData('r_w.started', r_w.tStartRefresh)
-thisExp.addData('r_w.stopped', r_w.tStopRefresh)
-thisExp.addData('x_z.started', x_z.tStartRefresh)
-thisExp.addData('x_z.stopped', x_z.tStopRefresh)
+thisExp.addData('a.started', a.tStartRefresh)
+thisExp.addData('a.stopped', a.tStopRefresh)
+thisExp.addData('c.started', c.tStartRefresh)
+thisExp.addData('c.stopped', c.tStopRefresh)
+thisExp.addData('d.started', d.tStartRefresh)
+thisExp.addData('d.stopped', d.tStopRefresh)
+thisExp.addData('e.started', e.tStartRefresh)
+thisExp.addData('e.stopped', e.tStopRefresh)
+thisExp.addData('f.started', f.tStartRefresh)
+thisExp.addData('f.stopped', f.tStopRefresh)
+thisExp.addData('b.started', b.tStartRefresh)
+thisExp.addData('b.stopped', b.tStopRefresh)
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
