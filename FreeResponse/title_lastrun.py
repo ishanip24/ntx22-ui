@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Mon Jan 24 12:29:58 2022
+    on Sun Jan 30 11:24:22 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -88,77 +88,77 @@ trialClock = core.Clock()
 left_top = visual.ShapeStim(
     win=win, name='left_top',
     size=(0.15, 0.15), vertices='circle',
-    ori=0.0, pos=(-0.6, 0.2),
+    ori=0.0, pos=(-0.6, 0.25),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='blue',
     opacity=1.0, depth=0.0, interpolate=True)
 middle_top = visual.ShapeStim(
     win=win, name='middle_top',
     size=(0.15, 0.15), vertices='circle',
-    ori=0.0, pos=(0, 0.2),
+    ori=0.0, pos=(0, 0.25),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='yellow',
     opacity=1.0, depth=-1.0, interpolate=True)
 right_top = visual.ShapeStim(
     win=win, name='right_top',
     size=(0.15, 0.15), vertices='circle',
-    ori=0.0, pos=(0.6, 0.2),
+    ori=0.0, pos=(0.6, 0.25),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='purple',
     opacity=1.0, depth=-2.0, interpolate=True)
 left_bottom = visual.ShapeStim(
     win=win, name='left_bottom',
     size=(0.15, 0.15), vertices='circle',
-    ori=0.0, pos=(-0.6, -0.3),
+    ori=0.0, pos=(-0.6, -0.15),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='pink',
     opacity=1.0, depth=-3.0, interpolate=True)
 middle_bottom = visual.ShapeStim(
     win=win, name='middle_bottom',
     size=(0.15, 0.15), vertices='circle',
-    ori=0.0, pos=(0, -0.3),
+    ori=0.0, pos=(0, -0.15),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='green',
     opacity=1.0, depth=-4.0, interpolate=True)
 right_bottom = visual.ShapeStim(
     win=win, name='right_bottom',
     size=(0.15, 0.15), vertices='circle',
-    ori=0.0, pos=(0.6, -0.3),
+    ori=0.0, pos=(0.6, -0.15),
     lineWidth=1.0,     colorSpace='rgb',  lineColor='black', fillColor='red',
     opacity=1.0, depth=-5.0, interpolate=True)
 a_f = visual.TextStim(win=win, name='a_f',
     text='ABC\nDEF',
     font='Open Sans',
-    pos=(-0.6, 0.05), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(-0.6, 0.15), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-6.0);
 g_l = visual.TextStim(win=win, name='g_l',
     text='GHI\nJKL',
     font='Open Sans',
-    pos=(0.6, 0.05), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(0.6, 0.15), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-7.0);
 m_r = visual.TextStim(win=win, name='m_r',
     text='MNO\nPQR',
     font='Open Sans',
-    pos=(-0.6, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(-0.6, -0.05), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-8.0);
 s_w = visual.TextStim(win=win, name='s_w',
-    text='STW\n\n',
+    text='STU\nVW\n\n',
     font='Open Sans',
-    pos=(0, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(0, -0.05), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-9.0);
 x_z = visual.TextStim(win=win, name='x_z',
     text='XYZ',
     font='Open Sans',
-    pos=(0.6, -0.15), height=0.05, wrapWidth=None, ori=0.0, 
+    pos=(0.6, -0.05), height=0.02, wrapWidth=None, ori=0.0, 
     color='black', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-10.0);
 textbar = visual.TextBox2(
      win, text='answer', font='Open Sans',
-     pos=(0, 0.35),     letterHeight=0.05,
+     pos=(0, 0.4),     letterHeight=0.05,
      size=(0.8, 0.1), borderWidth=2.0,
      color='black', colorSpace='rgb',
      opacity=None,
@@ -172,19 +172,34 @@ textbar = visual.TextBox2(
      name='textbar',
      autoLog=True,
 )
-back = visual.ShapeStim(
-    win=win, name='back',
-    size=(0.1, 0.1), vertices='triangle',
-    ori=0.0, pos=(-0.6, 0.4),
-    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
-    opacity=1.0, depth=-12.0, interpolate=True)
-back_text = visual.TextStim(win=win, name='back_text',
-    text='Back',
-    font='Open Sans',
-    pos=(-0.6, 0.4), height=0.05, wrapWidth=None, ori=0.0, 
-    color='black', colorSpace='rgb', opacity=None, 
-    languageStyle='LTR',
-    depth=-13.0);
+submit = visual.ButtonStim(win, 
+    text='Submit', font='Arvo',
+    pos=(0.3, -0.35),
+    letterHeight=0.05,
+    size=[.3, .15], borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=1.0,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='submit'
+)
+submit.buttonClock = core.Clock()
+back = visual.ButtonStim(win, 
+    text='back', font='Arvo',
+    pos=(-.3, -.35),
+    letterHeight=0.05,
+    size=[.3, .15], borderWidth=0.0,
+    fillColor='darkgrey', borderColor=None,
+    color='white', colorSpace='rgb',
+    opacity=1.0,
+    bold=True, italic=False,
+    padding=None,
+    anchor='center',
+    name='back'
+)
+back.buttonClock = core.Clock()
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -196,7 +211,7 @@ routineTimer.add(20.000000)
 # update component parameters for each repeat
 textbar.reset()
 # keep track of which components have finished
-trialComponents = [left_top, middle_top, right_top, left_bottom, middle_bottom, right_bottom, a_f, g_l, m_r, s_w, x_z, textbar, back, back_text]
+trialComponents = [left_top, middle_top, right_top, left_bottom, middle_bottom, right_bottom, a_f, g_l, m_r, s_w, x_z, textbar, submit, back]
 for thisComponent in trialComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -236,7 +251,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(left_top, 'tStopRefresh')  # time at next scr refresh
             left_top.setAutoDraw(False)
     if left_top.status == STARTED:  # only update if drawing
-        left_top.setOpacity(sin(25.12*t), log=False)
+        left_top.setOpacity(sin(1.57*t), log=False)
     
     # *middle_top* updates
     if middle_top.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -255,7 +270,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(middle_top, 'tStopRefresh')  # time at next scr refresh
             middle_top.setAutoDraw(False)
     if middle_top.status == STARTED:  # only update if drawing
-        middle_top.setOpacity(sin(43.98*t), log=False)
+        middle_top.setOpacity(sin(0.2*t), log=False)
     
     # *right_top* updates
     if right_top.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -274,7 +289,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(right_top, 'tStopRefresh')  # time at next scr refresh
             right_top.setAutoDraw(False)
     if right_top.status == STARTED:  # only update if drawing
-        right_top.setOpacity(sin(62.83*t), log=False)
+        right_top.setOpacity(sin(0.9*t), log=False)
     
     # *left_bottom* updates
     if left_bottom.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -293,7 +308,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(left_bottom, 'tStopRefresh')  # time at next scr refresh
             left_bottom.setAutoDraw(False)
     if left_bottom.status == STARTED:  # only update if drawing
-        left_bottom.setOpacity(sin(81.68*t), log=False)
+        left_bottom.setOpacity(sin(.224*t), log=False)
     
     # *middle_bottom* updates
     if middle_bottom.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -312,7 +327,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(middle_bottom, 'tStopRefresh')  # time at next scr refresh
             middle_bottom.setAutoDraw(False)
     if middle_bottom.status == STARTED:  # only update if drawing
-        middle_bottom.setOpacity(sin(100.53*t), log=False)
+        middle_bottom.setOpacity(sin(.63*t), log=False)
     
     # *right_bottom* updates
     if right_bottom.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -331,7 +346,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(right_bottom, 'tStopRefresh')  # time at next scr refresh
             right_bottom.setAutoDraw(False)
     if right_bottom.status == STARTED:  # only update if drawing
-        right_bottom.setOpacity(sin(119.38*t), log=False)
+        right_bottom.setOpacity(sin(.25*t), log=False)
     
     # *a_f* updates
     if a_f.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -435,8 +450,43 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(textbar, 'tStopRefresh')  # time at next scr refresh
             textbar.setAutoDraw(False)
     
+    # *submit* updates
+    if submit.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+        # keep track of start time/frame for later
+        submit.frameNStart = frameN  # exact frame index
+        submit.tStart = t  # local t and not account for scr refresh
+        submit.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(submit, 'tStartRefresh')  # time at next scr refresh
+        submit.setAutoDraw(True)
+    if submit.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > submit.tStartRefresh + 20-frameTolerance:
+            # keep track of stop time/frame for later
+            submit.tStop = t  # not accounting for scr refresh
+            submit.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(submit, 'tStopRefresh')  # time at next scr refresh
+            submit.setAutoDraw(False)
+    if submit.status == STARTED:  # only update if drawing
+        submit.setOpacity(sin(.39*t), log=False)
+    if submit.status == STARTED:
+        # check whether submit has been pressed
+        if submit.isClicked:
+            if not submit.wasClicked:
+                submit.timesOn.append(submit.buttonClock.getTime()) # store time of first click
+                submit.timesOff.append(submit.buttonClock.getTime()) # store time clicked until
+            else:
+                submit.timesOff[-1] = submit.buttonClock.getTime() # update time clicked until
+            if not submit.wasClicked:
+                continueRoutine = False  # end routine when submit is clicked
+                None
+            submit.wasClicked = True  # if submit is still clicked next frame, it is not a new click
+        else:
+            submit.wasClicked = False  # if submit is clicked next frame, it is a new click
+    else:
+        submit.wasClicked = False  # if submit is clicked next frame, it is a new click
+    
     # *back* updates
-    if back.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+    if back.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
         # keep track of start time/frame for later
         back.frameNStart = frameN  # exact frame index
         back.tStart = t  # local t and not account for scr refresh
@@ -452,24 +502,23 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(back, 'tStopRefresh')  # time at next scr refresh
             back.setAutoDraw(False)
     if back.status == STARTED:  # only update if drawing
-        back.setOpacity(sin(138.23*t), log=False)
-    
-    # *back_text* updates
-    if back_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        back_text.frameNStart = frameN  # exact frame index
-        back_text.tStart = t  # local t and not account for scr refresh
-        back_text.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(back_text, 'tStartRefresh')  # time at next scr refresh
-        back_text.setAutoDraw(True)
-    if back_text.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > back_text.tStartRefresh + 20.0-frameTolerance:
-            # keep track of stop time/frame for later
-            back_text.tStop = t  # not accounting for scr refresh
-            back_text.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(back_text, 'tStopRefresh')  # time at next scr refresh
-            back_text.setAutoDraw(False)
+        back.setOpacity(sin(.285*t), log=False)
+    if back.status == STARTED:
+        # check whether back has been pressed
+        if back.isClicked:
+            if not back.wasClicked:
+                back.timesOn.append(back.buttonClock.getTime()) # store time of first click
+                back.timesOff.append(back.buttonClock.getTime()) # store time clicked until
+            else:
+                back.timesOff[-1] = back.buttonClock.getTime() # update time clicked until
+            if not back.wasClicked:
+                continueRoutine = False  # end routine when back is clicked
+                None
+            back.wasClicked = True  # if back is still clicked next frame, it is not a new click
+        else:
+            back.wasClicked = False  # if back is clicked next frame, it is a new click
+    else:
+        back.wasClicked = False  # if back is clicked next frame, it is a new click
     
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
@@ -517,10 +566,24 @@ thisExp.addData('x_z.stopped', x_z.tStopRefresh)
 thisExp.addData('textbar.text',textbar.text)
 thisExp.addData('textbar.started', textbar.tStartRefresh)
 thisExp.addData('textbar.stopped', textbar.tStopRefresh)
+thisExp.addData('submit.started', submit.tStartRefresh)
+thisExp.addData('submit.stopped', submit.tStopRefresh)
+thisExp.addData('submit.numClicks', submit.numClicks)
+if submit.numClicks:
+   thisExp.addData('submit.timesOn', submit.timesOn)
+   thisExp.addData('submit.timesOff', submit.timesOff)
+else:
+   thisExp.addData('submit.timesOn', "")
+   thisExp.addData('submit.timesOff', "")
 thisExp.addData('back.started', back.tStartRefresh)
 thisExp.addData('back.stopped', back.tStopRefresh)
-thisExp.addData('back_text.started', back_text.tStartRefresh)
-thisExp.addData('back_text.stopped', back_text.tStopRefresh)
+thisExp.addData('back.numClicks', back.numClicks)
+if back.numClicks:
+   thisExp.addData('back.timesOn', back.timesOn)
+   thisExp.addData('back.timesOff', back.timesOff)
+else:
+   thisExp.addData('back.timesOn', "")
+   thisExp.addData('back.timesOff', "")
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
