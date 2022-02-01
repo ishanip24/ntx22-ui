@@ -73,7 +73,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_1" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*4)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*1.57)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(-.45, .15)" valType="list"/>
@@ -108,7 +108,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_05" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*16)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.39)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(-.45, -.1)" valType="list"/>
@@ -143,7 +143,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_08" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*25)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.25)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(.45,-.1)" valType="list"/>
@@ -178,7 +178,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_02" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*7)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.9)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(-.15,.15)" valType="list"/>
@@ -213,7 +213,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_06" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*19)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.33)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(-.15, -.1)" valType="list"/>
@@ -248,7 +248,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_03" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*10)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.63)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(0.15,.15)" valType="list"/>
@@ -283,7 +283,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_07" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*22)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.285)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(.15,-.1)" valType="list"/>
@@ -318,7 +318,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_00" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*31)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.2)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(.15,-.35)" valType="list"/>
@@ -353,7 +353,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_04" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*13)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.48)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(.45,.15)" valType="list"/>
@@ -388,7 +388,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="button_09" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="set every frame" val="sin(t*28)" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.224)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(-.15,-.35)" valType="list"/>
@@ -459,7 +459,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="back" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.25)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(-.45,-.35)" valType="list"/>
@@ -494,7 +494,7 @@
         <Param name="letterHeight" updates="constant" val="0.05" valType="num"/>
         <Param name="name" updates="None" val="submit" valType="code"/>
         <Param name="oncePerClick" updates="constant" val="True" valType="bool"/>
-        <Param name="opacity" updates="constant" val="" valType="num"/>
+        <Param name="opacity" updates="set every frame" val="sin(t*.25)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
         <Param name="pos" updates="constant" val="(.45,-.35)" valType="list"/>
