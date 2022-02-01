@@ -1,0 +1,31 @@
+0.8235 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+5.0661 	WARNING 	User requested fullscreen with size [1280  720], but screen is actually [1440, 900]. Using actual size
+7.6224 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0.92156863, 0.92156863, 0.7254902 ]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7ff40bf13ac8>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7ff40c15bb70>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+7.6230 	EXP 	window1: mouseVisible = True
+7.6230 	EXP 	window1: recordFrameIntervals = False
+7.8444 	EXP 	window1: recordFrameIntervals = True
+8.0247 	WARNING 	t of last frame was 31.89ms (=1/31)
+8.0508 	WARNING 	t of last frame was 26.10ms (=1/38)
+8.0852 	WARNING 	t of last frame was 26.36ms (=1/37)
+8.1351 	WARNING 	t of last frame was 33.74ms (=1/29)
+8.2911 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+10.0266 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+11.7647 	EXP 	Created text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='text_2', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='Welcome to the Home Page', units='height', win=Window(...), wrapWidth=1)
+11.7945 	EXP 	window1: mouseVisible = True
+11.8063 	EXP 	window1: mouseVisible = True
+11.8135 	EXP 	window1: mouseVisible = True
+11.8239 	EXP 	window1: mouseVisible = True
+11.8338 	EXP 	window1: mouseVisible = True
+11.8338 	EXP 	window1: mouseVisible = True
+11.8501 	EXP 	window1: mouseVisible = True
+11.8549 	EXP 	Created Delete = ShapeStim(__class__=<class 'psychopy.visual.shape.ShapeStim'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-8.0, fillColor=array([-1, -1, -1]), fillColorSpace='rgb', fillRGB=array([-1, -1, -1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='Delete', opacity=1.0, ori=0.0, pos=array([-0.2 , -0.35]), size=array([0.2 , 0.15]), units='height', vertices=ndarray(...), win=Window(...), windingRule=None)
+11.8829 	EXP 	textbox: autoLog = True
+11.8829 	EXP 	text_2: autoDraw = True
+12.9608 	EXP 	text_2: autoDraw = False
+12.9608 	EXP 	textbox: autoDraw = True
+12.9608 	EXP 	Delete: autoDraw = True
+42.1644 	DATA 	Keypress: escape
+42.8163 	EXP 	window1: mouseVisible = True

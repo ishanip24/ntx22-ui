@@ -1,0 +1,46 @@
+0.8101 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.2864 	WARNING 	User requested fullscreen with size [1024  768], but screen is actually [1440, 900]. Using actual size
+10.1446 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+10.1458 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x7fa597bbd898>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x7fa57b2b6278>, multiSample=False, name='window1', numSamples=2, pos=[360.0, 225.0], screen=0, size=array([2880, 1800]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=True, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.1462 	EXP 	window1: mouseVisible = True
+10.1463 	EXP 	window1: recordFrameIntervals = False
+10.3610 	EXP 	window1: recordFrameIntervals = True
+10.4126 	WARNING 	t of last frame was 32.14ms (=1/31)
+10.4476 	WARNING 	t of last frame was 20.74ms (=1/48)
+10.4805 	WARNING 	t of last frame was 32.89ms (=1/30)
+10.5460 	WARNING 	t of last frame was 32.12ms (=1/31)
+10.5801 	WARNING 	Multiple dropped frames have occurred - I'll stop bothering you about them!
+12.5168 	WARNING 	Couldn't measure a consistent frame rate.
+  - Is your graphics card set to sync to vertical blank?
+  - Are you running other processes on your computer?
+
+14.1069 	EXP 	Created uprighttangle = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=0.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='uprighttangle', opacity=1.0, ori=0.0, pos=array([0.2, 0.2]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+14.1089 	EXP 	Created downrighttangle = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-1.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='downrighttangle', opacity=1.0, ori=0.0, pos=array([ 0.2, -0.2]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+14.1108 	EXP 	Created downlefttangle = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-2.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='downlefttangle', opacity=1.0, ori=0.0, pos=array([-0.2, -0.2]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+14.1128 	EXP 	Created uplefttangle = Rect(__class__=<class 'psychopy.visual.rect.Rect'>, autoDraw=False, autoLog=True, closeShape=True, color=method-wrapper(...), colorSpace='rgb', contrast=None, depth=-3.0, fillColor=array([1, 1, 1]), fillColorSpace='rgb', fillRGB=array([1, 1, 1]), interpolate=True, lineColor=array([1., 1., 1.]), lineColorSpace='rgb', lineRGB=array([1, 1, 1]), lineWidth=1.0, name='uplefttangle', opacity=1.0, ori=0.0, pos=array([-0.2,  0.2]), size=array([0.1, 0.1]), units='height', vertices=ndarray(...), win=Window(...))
+14.1130 	EXP 	window1: mouseVisible = True
+14.1388 	EXP 	Created uprtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([ 1., -1., -1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='uprtext', opacity=1, ori=0.0, pos=array([0.2, 0.1]), rgb=UNKNOWN, text='B', units='height', win=Window(...), wrapWidth=1)
+14.1423 	EXP 	Created downrtext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1.        ,  0.00392157, -1.        ]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='downrtext', opacity=1, ori=0.0, pos=array([ 0.2, -0.3]), rgb=UNKNOWN, text='D', units='height', win=Window(...), wrapWidth=1)
+14.1456 	EXP 	Created downltext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([-1., -1.,  1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='downltext', opacity=1, ori=0.0, pos=array([-0.2, -0.3]), rgb=UNKNOWN, text='C', units='height', win=Window(...), wrapWidth=1)
+14.1487 	EXP 	Created upltext = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([ 0.00392157, -1.        ,  0.00392157]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, font='Open Sans', fontFiles=[], height=0.1, italic=False, languageStyle='LTR', name='upltext', opacity=1, ori=0.0, pos=array([-0.2,  0.1]), rgb=UNKNOWN, text='A', units='height', win=Window(...), wrapWidth=1)
+14.1818 	EXP 	uprighttangle: autoDraw = True
+14.1818 	EXP 	downrighttangle: autoDraw = True
+14.1818 	EXP 	downlefttangle: autoDraw = True
+14.1818 	EXP 	uplefttangle: autoDraw = True
+14.1818 	EXP 	uprtext: autoDraw = True
+14.1818 	EXP 	downrtext: autoDraw = True
+14.1818 	EXP 	downltext: autoDraw = True
+14.1818 	EXP 	upltext: autoDraw = True
+19.1705 	EXP 	uprighttangle: autoDraw = False
+19.1943 	EXP 	uprighttangle: autoDraw = False
+19.1943 	EXP 	downrighttangle: autoDraw = False
+19.1943 	EXP 	downlefttangle: autoDraw = False
+19.1943 	EXP 	uplefttangle: autoDraw = False
+19.1943 	EXP 	uprtext: autoDraw = False
+19.1943 	EXP 	downrtext: autoDraw = False
+19.1943 	EXP 	downltext: autoDraw = False
+19.1943 	EXP 	upltext: autoDraw = False
+19.7680 	EXP 	window1: mouseVisible = True

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on Mon Jan 31 19:23:25 2022
+    on Mon Jan 31 19:20:47 2022
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -36,7 +36,7 @@ os.chdir(_thisDir)
 
 # Store info about the experiment session
 psychopyVersion = '2021.2.3'
-expName = 'Flickering Muliple Choice'  # from the Builder filename that created this script
+expName = 'Flickering Muliple Choice Final'  # from the Builder filename that created this script
 expInfo = {'participant': '', 'session': '001'}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
@@ -51,7 +51,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='/Users/jai/Desktop/Covid Spreader/ntx22-ui/Mc/Flickering Muliple Choice_lastrun.py',
+    originPath='/Users/jai/Desktop/Covid Spreader/ntx22-ui/Mc/Flickering Muliple Choice Final_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -140,6 +140,28 @@ upltext = visual.TextStim(win=win, name='upltext',
     color='purple', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-8.0);
+textbox = visual.TextBox2(
+     win, text=None, font='Open Sans',
+     pos=(0, 0.4),     letterHeight=0.05,
+     size=(0.8, 0.05), borderWidth=2.0,
+     color='black', colorSpace='rgb',
+     opacity=1.0,
+     bold=False, italic=False,
+     lineSpacing=1.0,
+     padding=0.0,
+     anchor='center',
+     fillColor='white', borderColor='black',
+     flipHoriz=False, flipVert=False,
+     editable=False,
+     name='textbox',
+     autoLog=True,
+)
+backtangle = visual.ShapeStim(
+    win=win, name='backtangle',
+    size=(0.1, 0.1), vertices='triangle',
+    ori=0.0, pos=(-0.7, 0.4),
+    lineWidth=1.0,     colorSpace='rgb',  lineColor='white', fillColor='white',
+    opacity=None, depth=-10.0, interpolate=True)
 
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
@@ -152,8 +174,9 @@ routineTimer.add(5.000000)
 # setup some python lists for storing info about the mouse
 mouse.clicked_name = []
 gotValidClick = False  # until a click is received
+textbox.reset()
 # keep track of which components have finished
-trialComponents = [uprighttangle, downrighttangle, downlefttangle, uplefttangle, mouse, uprtext, downrtext, downltext, upltext]
+trialComponents = [uprighttangle, downrighttangle, downlefttangle, uplefttangle, mouse, uprtext, downrtext, downltext, upltext, textbox, backtangle]
 for thisComponent in trialComponents:
     thisComponent.tStart = None
     thisComponent.tStop = None
@@ -193,7 +216,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(uprighttangle, 'tStopRefresh')  # time at next scr refresh
             uprighttangle.setAutoDraw(False)
     if uprighttangle.status == STARTED:  # only update if drawing
-        uprighttangle.setOpacity(sin(20*t), log=False)
+        uprighttangle.setOpacity(sin(1.57*t), log=False)
     
     # *downrighttangle* updates
     if downrighttangle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -212,7 +235,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(downrighttangle, 'tStopRefresh')  # time at next scr refresh
             downrighttangle.setAutoDraw(False)
     if downrighttangle.status == STARTED:  # only update if drawing
-        downrighttangle.setOpacity(sin(15*t), log=False)
+        downrighttangle.setOpacity(sin(0.48*t), log=False)
     
     # *downlefttangle* updates
     if downlefttangle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -231,7 +254,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(downlefttangle, 'tStopRefresh')  # time at next scr refresh
             downlefttangle.setAutoDraw(False)
     if downlefttangle.status == STARTED:  # only update if drawing
-        downlefttangle.setOpacity(sin(10*t), log=False)
+        downlefttangle.setOpacity(sin(0.285*t), log=False)
     
     # *uplefttangle* updates
     if uplefttangle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
@@ -250,7 +273,7 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(uplefttangle, 'tStopRefresh')  # time at next scr refresh
             uplefttangle.setAutoDraw(False)
     if uplefttangle.status == STARTED:  # only update if drawing
-        uplefttangle.setOpacity(sin(25*t), log=False)
+        uplefttangle.setOpacity(sin(0.224*t), log=False)
     # *mouse* updates
     if mouse.status == NOT_STARTED and t >= 0.0-frameTolerance:
         # keep track of start time/frame for later
@@ -356,6 +379,40 @@ while continueRoutine and routineTimer.getTime() > 0:
             win.timeOnFlip(upltext, 'tStopRefresh')  # time at next scr refresh
             upltext.setAutoDraw(False)
     
+    # *textbox* updates
+    if textbox.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        textbox.frameNStart = frameN  # exact frame index
+        textbox.tStart = t  # local t and not account for scr refresh
+        textbox.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(textbox, 'tStartRefresh')  # time at next scr refresh
+        textbox.setAutoDraw(True)
+    if textbox.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > textbox.tStartRefresh + 5-frameTolerance:
+            # keep track of stop time/frame for later
+            textbox.tStop = t  # not accounting for scr refresh
+            textbox.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(textbox, 'tStopRefresh')  # time at next scr refresh
+            textbox.setAutoDraw(False)
+    
+    # *backtangle* updates
+    if backtangle.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
+        # keep track of start time/frame for later
+        backtangle.frameNStart = frameN  # exact frame index
+        backtangle.tStart = t  # local t and not account for scr refresh
+        backtangle.tStartRefresh = tThisFlipGlobal  # on global time
+        win.timeOnFlip(backtangle, 'tStartRefresh')  # time at next scr refresh
+        backtangle.setAutoDraw(True)
+    if backtangle.status == STARTED:
+        # is it time to stop? (based on global clock, using actual start)
+        if tThisFlipGlobal > backtangle.tStartRefresh + 5-frameTolerance:
+            # keep track of stop time/frame for later
+            backtangle.tStop = t  # not accounting for scr refresh
+            backtangle.frameNStop = frameN  # exact frame index
+            win.timeOnFlip(backtangle, 'tStopRefresh')  # time at next scr refresh
+            backtangle.setAutoDraw(False)
+    
     # check for quit (typically the Esc key)
     if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
         core.quit()
@@ -418,6 +475,10 @@ thisExp.addData('downltext.started', downltext.tStartRefresh)
 thisExp.addData('downltext.stopped', downltext.tStopRefresh)
 thisExp.addData('upltext.started', upltext.tStartRefresh)
 thisExp.addData('upltext.stopped', upltext.tStopRefresh)
+thisExp.addData('textbox.started', textbox.tStartRefresh)
+thisExp.addData('textbox.stopped', textbox.tStopRefresh)
+thisExp.addData('backtangle.started', backtangle.tStartRefresh)
+thisExp.addData('backtangle.stopped', backtangle.tStopRefresh)
 
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
