@@ -7,7 +7,7 @@
     <Param name="Data file delimiter" updates="None" val="auto" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
-    <Param name="Experiment info" updates="None" val="{'participant':'', 'session':'001'}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'Session': '001'}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="" valType="str"/>
@@ -25,9 +25,9 @@
     <Param name="Show mouse" updates="None" val="False" valType="bool"/>
     <Param name="Units" updates="None" val="height" valType="str"/>
     <Param name="Use version" updates="None" val="" valType="str"/>
-    <Param name="Window size (pixels)" updates="None" val="(1024, 768)" valType="list"/>
+    <Param name="Window size (pixels)" updates="None" val="[1440, 900]" valType="list"/>
     <Param name="blendMode" updates="None" val="avg" valType="str"/>
-    <Param name="color" updates="None" val="$[0,0,0]" valType="color"/>
+    <Param name="color" updates="None" val="blue" valType="color"/>
     <Param name="colorSpace" updates="None" val="rgb" valType="str"/>
     <Param name="elAddress" updates="None" val="100.1.1.1" valType="str"/>
     <Param name="elDataFiltering" updates="None" val="FILTER_LEVEL_2" valType="str"/>
@@ -45,7 +45,7 @@
     <Param name="gpAddress" updates="None" val="127.0.0.1" valType="str"/>
     <Param name="gpPort" updates="None" val="4242" valType="num"/>
     <Param name="logging level" updates="None" val="exp" valType="code"/>
-    <Param name="mgBlink" updates="None" val="MIDDLE_BUTTON" valType="list"/>
+    <Param name="mgBlink" updates="None" val="('MIDDLE_BUTTON',)" valType="list"/>
     <Param name="mgMove" updates="None" val="CONTINUOUS" valType="str"/>
     <Param name="mgSaccade" updates="None" val="0.5" valType="num"/>
     <Param name="tbLicenseFile" updates="None" val="" valType="str"/>
@@ -60,7 +60,7 @@
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="blue" valType="color"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="color"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="lineColor" updates="constant" val="black" valType="color"/>
         <Param name="lineWidth" updates="constant" val="1" valType="num"/>
@@ -68,7 +68,7 @@
         <Param name="name" updates="None" val="left_top" valType="code"/>
         <Param name="opacity" updates="set every frame" val="sin(1.57*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.6, 0.25)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.6, 0.17)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="None" val="circle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
@@ -86,7 +86,7 @@
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="yellow" valType="color"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="color"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="lineColor" updates="constant" val="black" valType="color"/>
         <Param name="lineWidth" updates="constant" val="1" valType="num"/>
@@ -94,7 +94,7 @@
         <Param name="name" updates="None" val="middle_top" valType="code"/>
         <Param name="opacity" updates="set every frame" val="sin(0.2*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0.25)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, 0.17)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="None" val="circle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
@@ -112,7 +112,7 @@
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="purple" valType="color"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="color"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="lineColor" updates="constant" val="black" valType="color"/>
         <Param name="lineWidth" updates="constant" val="1" valType="num"/>
@@ -120,7 +120,7 @@
         <Param name="name" updates="None" val="right_top" valType="code"/>
         <Param name="opacity" updates="set every frame" val="sin(0.9*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.6, 0.25)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0.6, 0.17)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="None" val="circle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
@@ -138,7 +138,7 @@
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="pink" valType="color"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="color"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="lineColor" updates="constant" val="black" valType="color"/>
         <Param name="lineWidth" updates="constant" val="1" valType="num"/>
@@ -146,7 +146,7 @@
         <Param name="name" updates="None" val="left_bottom" valType="code"/>
         <Param name="opacity" updates="set every frame" val="sin(.224*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.6, -0.15)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.6, -0.3)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="None" val="circle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
@@ -164,7 +164,7 @@
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="green" valType="color"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="color"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="lineColor" updates="constant" val="black" valType="color"/>
         <Param name="lineWidth" updates="constant" val="1" valType="num"/>
@@ -172,7 +172,7 @@
         <Param name="name" updates="None" val="middle_bottom" valType="code"/>
         <Param name="opacity" updates="set every frame" val="sin(.63*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, -0.15)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, -0.3)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="None" val="circle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
@@ -190,7 +190,7 @@
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
-        <Param name="fillColor" updates="constant" val="red" valType="color"/>
+        <Param name="fillColor" updates="constant" val="grey" valType="color"/>
         <Param name="interpolate" updates="constant" val="linear" valType="str"/>
         <Param name="lineColor" updates="constant" val="black" valType="color"/>
         <Param name="lineWidth" updates="constant" val="1" valType="num"/>
@@ -198,7 +198,7 @@
         <Param name="name" updates="None" val="right_bottom" valType="code"/>
         <Param name="opacity" updates="set every frame" val="sin(.25*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.6, -0.15)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0.6, -0.3)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="shape" updates="None" val="circle" valType="str"/>
         <Param name="size" updates="constant" val="(0.15, 0.15)" valType="list"/>
@@ -212,7 +212,7 @@
         <Param name="vertices" updates="constant" val="" valType="list"/>
       </PolygonComponent>
       <TextComponent name="a_f">
-        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -220,11 +220,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
         <Param name="name" updates="None" val="a_f" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.6, 0.15)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.6, 0.05)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -237,7 +237,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <TextComponent name="g_l">
-        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -245,11 +245,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
         <Param name="name" updates="None" val="g_l" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.6, 0.15)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0.6, 0.05)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -262,7 +262,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <TextComponent name="m_r">
-        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -270,11 +270,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
         <Param name="name" updates="None" val="m_r" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(-0.6, -0.05)" valType="list"/>
+        <Param name="pos" updates="constant" val="(-0.6, -0.17)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -287,7 +287,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <TextComponent name="s_w">
-        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -295,11 +295,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
         <Param name="name" updates="None" val="s_w" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, -0.05)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, -0.2)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -312,7 +312,7 @@
         <Param name="wrapWidth" updates="constant" val="" valType="num"/>
       </TextComponent>
       <TextComponent name="x_z">
-        <Param name="color" updates="constant" val="black" valType="color"/>
+        <Param name="color" updates="constant" val="white" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -320,11 +320,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Open Sans" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.02" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.04" valType="num"/>
         <Param name="name" updates="None" val="x_z" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0.6, -0.05)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0.6, -0.17)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -360,7 +360,7 @@
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0.4)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, 0.37)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
         <Param name="size" updates="constant" val="(0.8, 0.1)" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
@@ -428,10 +428,10 @@
         <Param name="opacity" updates="set every frame" val="sin(.285*t)" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
         <Param name="padding" updates="constant" val="" valType="num"/>
-        <Param name="pos" updates="constant" val="(-.3, -.35)" valType="list"/>
+        <Param name="pos" updates="constant" val="(.6, .35)" valType="list"/>
         <Param name="save" updates="None" val="every click" valType="str"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="[.3, .15]" valType="list"/>
+        <Param name="size" updates="constant" val="[.2, .1]" valType="list"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0" valType="code"/>
@@ -442,6 +442,24 @@
         <Param name="timeRelativeTo" updates="constant" val="button onset" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
       </ButtonComponent>
+      <MouseComponent name="mouse">
+        <Param name="clickable" updates="constant" val="left_top, middle_top, right_top, left_bottom, middle_bottom, right_bottom" valType="list"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutineOnPress" updates="constant" val="valid click" valType="str"/>
+        <Param name="name" updates="None" val="mouse" valType="code"/>
+        <Param name="newClicksOnly" updates="constant" val="True" valType="bool"/>
+        <Param name="saveMouseState" updates="None" val="on click" valType="str"/>
+        <Param name="saveParamsClickable" updates="constant" val="name," valType="list"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="20.0" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="False" valType="bool"/>
+        <Param name="timeRelativeTo" updates="constant" val="mouse onset" valType="str"/>
+      </MouseComponent>
     </Routine>
   </Routines>
   <Flow>
